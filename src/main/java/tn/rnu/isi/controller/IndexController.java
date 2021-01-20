@@ -77,7 +77,7 @@ public class IndexController {
 			model.addAttribute("produitForm", produit);
 
 	 
-			 return "/produit/addUpdateProduit";// C'est le nom de la page JSP à rediriger (newProduit.jsp)
+			 return "produit/addUpdateProduit";// C'est le nom de la page JSP à rediriger (newProduit.jsp)
 
 		}
 		
@@ -95,7 +95,7 @@ public class IndexController {
 			/*
 			 * Envoi Vue + Modèle MVC pour Affichage données vue
 			 */
-			return new ModelAndView("/produit/showAllProduits", "produits", listeProduits);
+			return new ModelAndView("produit/showAllProduits", "produits", listeProduits);
 		} 
 	
 }
